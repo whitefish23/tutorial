@@ -1,11 +1,14 @@
-.title {
-  font-size: 40px;
-  color: red;
+
+
+@font-face {
+  font-family: "Igra Sans";
+  src: url("~@assets/font/IgraSans.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
 }
 
-
-.card {
-  padding: 20px;
-  border: 1px solid;
-  margin-bottom: 20px;
+.test {
+  width: 20px;
+  height: 20px;
+  background-image: url("~@assets/img/performer2.jpg");
 }

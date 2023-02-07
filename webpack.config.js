@@ -26,12 +26,13 @@ const multipleHtmlPlugins = pagesList.map((name) => {
 module.exports = {
   //экспортируемый обьект конфигурации
   mode: process.env.NODE_ENV, // режим разработки development или production
-  entry: path.resolve(__dirname, "index.js"), //точка входа
+  entry: path.resolve(__dirname, "src/index.js"), //точка входа
 
   output: {
     //точка выхода
     path: path.resolve(__dirname, "dist"), //путь куда складывать все результаты
-    filename: "bundle.js" //имя конечного файла
+    filename: "bundle.js", //имя конечного файла
+    assetModuleFilename: "assets/img/[name][ext][query]"
   },
 
   module: {
@@ -42,24 +43,36 @@ module.exports = {
         loader: "html-loader"
       },
       {
-        test: /\.(gif|png|jpe?g|svg)$/i,
-        use: [
-          "file-loader",
-          {
-            loader: "image-webpack-loader",
-            options: {
-              bypassOnDebug: true, // webpack@1.x
-              disable: true // webpack@2.x and newer
-            }
+        test: /\.(png|svg|jpg|jpeg|gif)$/i,
+        type: 'asset/resource',
+        generator: {
+          filename: ({module}) => {
+            const pathParts = module.context.split("/");
+            const type = pathParts[pathParts.length - 1];
+            return `assets/${type}/[name][ext]`;
           }
-        ]
+        }
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/i,
+        type: "asset/resource",
+        generator: {
+          filename: "assets/fonts/[name][ext][query]"
+        }
       },
       {
         test: /\.hbs$/,
         loader: "handlebars-loader",
         options: {
-          inlineRequires: "/images/"
+          inlineRequires: '@assets'
         }
+      },
+      {
+        test: /\.css$/i, // какой тип файла
+        use: [
+          isDEV ? "style-loader" : MiniCssExtractPlugin.loader,
+          "css-loader"
+        ]
       },
       {
         test: /\.s[ac]ss$/i, // какой тип файла
@@ -76,9 +89,10 @@ module.exports = {
     alias: {
       "@data": path.resolve(__dirname, "src/data/"),
       "@src": path.resolve(__dirname, "src"),
-      "@img": path.resolve(__dirname, "src/img/")
+      "@img": path.resolve(__dirname, "src/img/"),
+      "@assets": path.resolve(__dirname, "src/assets")
     },
-    extensions: [ '', '.js', '.jpg', '.png', '.svg', '.webp' ]
+    extensions: ["", ".js", ".jpg", ".png", ".svg", ".webp"]
   },
 
   devServer: {

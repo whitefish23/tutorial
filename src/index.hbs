@@ -6,18 +6,31 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="title">
+    <style>
+      .hbs-title {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 30px;
+      }
+
+      .hbs-page-list {
+        list-style-type: number;
+        padding-left: 40px;
+        text-decoration: underline;
+      }
+    </style>
+    <div class="hbs-title">
       Page list:
-
-      <ul>
-
-        {{#each pages}}
-          <li>
-            <a href="/{{this}}">{{this}}</a>
-          </li>
-        {{/each}}
-      </ul>
-
     </div>
+
+    <ul class="hbs-page-list">
+
+      {{#each pages}}
+        <li>
+          <a href="/{{this}}">{{this}}</a>
+        </li>
+      {{/each}}
+    </ul>
+
   </body>
 </html>
