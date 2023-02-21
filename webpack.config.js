@@ -47,8 +47,11 @@ module.exports = {
         type: 'asset/resource',
         generator: {
           filename: ({module}) => {
-            const pathParts = module.context.split("/");
+            const pathParts = path.resolve(module.context).split(path.sep);
+           
             const type = pathParts[pathParts.length - 1];
+
+            console.log({pathParts, type})
             return `assets/${type}/[name][ext]`;
           }
         }
@@ -89,8 +92,9 @@ module.exports = {
     alias: {
       "@data": path.resolve(__dirname, "src/data/"),
       "@src": path.resolve(__dirname, "src"),
-      "@img": path.resolve(__dirname, "src/img/"),
-      "@assets": path.resolve(__dirname, "src/assets")
+      "@assets": path.resolve(__dirname, "src/assets"),
+      "@img":  path.resolve(__dirname, "src/assets/img"),
+      "@icon":  path.resolve(__dirname, "src/assets/icon"),
     },
     extensions: ["", ".js", ".jpg", ".png", ".svg", ".webp"]
   },

@@ -1,0 +1,261 @@
+@media (max-width: 1500px) {
+  .header {
+    &__info {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 1190px) {
+  .header {
+    margin-bottom: 20px;
+
+    &__orders-times {
+      display: none;
+    }
+
+    &__phone {
+      display: none;
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__btn-logo {
+      margin-right: 0px;
+    }
+
+    &__btn-icon {
+      margin-right: 10px;
+    }
+  }
+
+  .baner {
+    margin-bottom: 20px;
+
+    &__offer-logo {
+      display: block;
+    }
+
+    &__slider-section {
+      display: none;
+    }
+
+    &__main {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__offer {
+      padding-left: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      margin-top: 20px;
+      font-size: 22px;
+      margin-bottom: 23px;
+      max-width: 275px;
+      line-height: 22px;
+      text-align: center;
+    }
+
+    &__btn {
+      padding: 17px 40px;
+    }
+  }
+
+  .menu {
+    margin-bottom: 40px;
+
+
+    .box {
+      border-radius: 6px;
+      background-color: #ffffff;
+      padding: 25px;
+      display: block;
+      font-size: 14px;
+      position: relative;
+      overflow: hidden;
+      height: 100px;
+
+      &__img {
+        width: 82px;
+        height: 70px;
+        position: absolute;
+        right: -43px;
+        top: 17px;
+      }
+
+      &__title {
+        font-size: 14px;
+        padding: 0px;
+      }
+    }
+  }
+
+  .footer {
+    &__content {
+      display: none;
+    }
+  }
+
+  .popular {
+    &__title {
+      font-size: 20px;
+      margin-bottom: 26px;
+      text-align: center;
+      color: #404040;
+    }
+  }
+
+  .footer-mob {
+    display: block;
+    margin-top: 60px;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 50px 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    &__phone {
+      font-size: 16px;
+      font-weight: 400;
+      color: #999999;
+      margin-bottom: 4px;
+    }
+
+    &__num-phone {
+      font-family: "Roboto";
+      color: #404040;
+      font-size: 16px;
+      font-weight: 400;
+      margin-bottom: 20px;
+    }
+
+    &__sub-title {
+      color: #f0af3b;
+      font-size: 12px;
+      font-weight: 400;
+      margin-bottom: 30px;
+    }
+
+    &__adress-title {
+      font-size: 12px;
+      font-weight: 400;
+      color: #999999;
+      margin-bottom: 4px;
+    }
+
+    &__adress {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+
+    &__social-item {
+      width: 40px;
+      height: 40px;
+      background: #f7f7f7;
+      border-radius: 50%;
+      margin-right: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__box-item {
+      display: flex;
+      margin-bottom: 30px;
+    }
+
+    &__title-info {
+      font-family: "roboto";
+      font-weight: 400;
+      color: #999999;
+      margin-bottom: 5px;
+    }
+
+    &__sub-info {
+      font-size: 12px;
+      color: #f0af3b;
+    }
+
+    &__top {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__location {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__bottom {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 700px) {
+  .popular {
+    margin-bottom: -50px;
+
+    &__btn-setting {
+      display: none;
+    }
+
+    &__btn-orange {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__vis-img {
+      height: 112px;
+      width: 108px;
+    }
+
+    &__card-title {
+      font-size: 10px;
+      color: #404040;
+      opacity: 0.5;
+      margin-bottom: 5px;
+    }
+
+    &__card-name {
+      font-size: 16px;
+      color: #404040;
+      margin-bottom: 5px;
+    }
+
+    &__card-composition {
+      font-family: "Roboto";
+      font-weight: 400;
+      font-size: 14px;
+      color: #404040;
+      opacity: 0.7;
+      margin-bottom: 34px
+    }
+
+    &__info {
+      margin-bottom: 20px;
+    }
+  }
+
+  .scrollbar-popular {
+    display: none;
+  }
+
+  
+}
