@@ -1,5 +1,3 @@
-
-
 @font-face {
   font-family: "Igra Sans";
   src: url("~@assets/font/IgraSans.woff2") format("woff2");
@@ -334,9 +332,7 @@
   .swiper-pagination-bullet-active {
     background-color: #f0af3b;
   }
-  
 }
-
 
 .menu {
   margin-bottom: 60px;
@@ -426,6 +422,10 @@
     align-items: center;
     justify-content: center;
   }
+}
+
+.footer-mob {
+  display: none;
 }
 
 .popular {
@@ -604,5 +604,297 @@
     width: 30%;
     border-radius: 6px;
     background: rgba(64, 64, 64, 0.1450980392);
+  }
+}
+
+//--contacts
+
+.contacts {
+  margin-bottom: 60px;
+
+  &__title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  &__baner {
+    background: #ffffff;
+    box-shadow: 0px 3px 1px rgb(0 0 0 / 5%);
+    border-radius: 6px;
+    padding: 40px;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info {
+    padding: 20px;
+  }
+
+  &__adres {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__adres-icon {
+    margin-right: 30px;
+  }
+
+  &__adres-title {
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 10px;
+  }
+
+  &__adres-sub-title {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__phone {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__phone-title {
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 10px;
+  }
+
+  &__phone-sub-title {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 4px;
+  }
+
+  &__phone-sub-title-two {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__phone-icon {
+    margin-right: 30px;
+  }
+
+  &__mail {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__mail-title {
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 10px;
+  }
+
+  &__mail-sub-title {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__mail-icon {
+    margin-right: 30px;
+  }
+
+  &__time {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__time-title {
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 10px;
+  }
+
+  &__time-sub-title {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__time-icon {
+    margin-right: 30px;
+  }
+
+  &__map {
+    width: 1165px;
+    height: 463px;
+    background: #000;
+    border-radius: 6px;
+  }
+}
+
+.order {
+  margin-bottom: 60px;
+
+  &__title {
+    font-size: 26px;
+    margin-bottom: 30px;
+  }
+
+  &__card {
+    display: flex;
+    justify-content: space-around;
+    width: 801px;
+    align-items: center;
+    padding: 26px 0;
+    border-bottom: #F7F7F7 solid 2px;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__chosen {
+    background: #ffffff;
+    box-shadow: 0px 3px 1px rgb(0 0 0 / 5%);
+    border-radius: 6px;
+    padding: 40px;
+  }
+
+  &__icons {
+    margin-right: 30px;
+  }
+
+  &__img {
+    margin-right: 40px;
+  }
+
+
+  &__counter {
+    display: flex;
+    margin-right: 50px;
+  }
+
+  &__btn-plus{
+    margin-right: 9px;
+  }
+
+  &__counter-num{
+    margin-right: 12px;
+  }
+
+
+
+  &__price {
+    margin-right: 50px;
+  }
+
+  &__data {
+    background: #ffffff;
+    box-shadow: 0px 3px 1px rgb(0 0 0 / 5%);
+    border-radius: 6px;
+    padding: 40px;
+    margin-left: 18px;
+    display: flex;
+  }
+
+  &__data-personal{
+    margin-right: 40px;
+  }
+
+  &__personal-title {
+    margin-bottom: 26px;
+  }
+
+  &__personal-name {
+    margin-bottom: 4px;
+  }
+
+  &__line-name {
+    background-color: #f5f7fa;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+  }
+
+  &__personal-phone {
+    margin-bottom: 4px;
+  }
+
+  &__line-phone {
+    margin-bottom: 30px;
+  }
+
+  &__line-phone {
+    background-color: #f5f7fa;
+    border-radius: 6px;
+    padding: 10px 20px;
+  }
+
+  &__deliviry-title {
+    margin-bottom: 26px;
+  }
+
+  &__adres {
+    margin-bottom: 4px;
+  }
+
+  &__line-adres {
+    background-color: #f5f7fa;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+  }
+
+  &__deliviry-st {
+    margin-bottom: 4px;
+  }
+
+  &__line-st {
+    background-color: #f5f7fa;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+  }
+
+  &__house-num {
+    margin-bottom: 4px;
+  }
+
+  &__line-house {
+    background-color: #f5f7fa;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+  }
+
+  &__apartment {
+    margin-bottom: 4px;
+  }
+
+  &__apart-num {
+    background-color: #f5f7fa;
+    border-radius: 6px;
+    padding: 10px 20px;
+    margin-bottom: 30px;
+  }
+
+
+
+
+
+
+
+
+
+
+
+  &__total {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 40px;
   }
 }

@@ -1,36 +1,45 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <style>
-      .hbs-title {
-        font-size: 24px;
-        font-weight: bold;
-        margin-bottom: 30px;
-      }
 
-      .hbs-page-list {
-        list-style-type: number;
-        padding-left: 40px;
-        text-decoration: underline;
-      }
-    </style>
-    <div class="hbs-title">
-      Page list:
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
 
-    <ul class="hbs-page-list">
+<body class="body-inside">
+  <style>
+    .body-inside {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
 
-      {{#each pages}}
-        <li>
-          <a href="/{{this}}">{{this}}</a>
-        </li>
-      {{/each}}
-    </ul>
+    .hbs-title {
+      font-size: 32px;
+      font-weight: bold;
+      margin-bottom: 30px;
+    }
 
-  </body>
+    .hbs-page-list {
+      list-style-type: number;
+      padding-left: 40px;
+      text-decoration: underline;
+    }
+  </style>
+  <div class="hbs-title">
+    Страницы входа:
+  </div>
+
+  <ul class="hbs-page-list">
+
+    {{#each pages}}
+    <li>
+      <a href="/{{this}}">{{this}}</a>
+    </li>
+    {{/each}}
+  </ul>
+
+</body>
+
 </html>

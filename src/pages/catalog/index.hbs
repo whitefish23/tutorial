@@ -1,0 +1,23 @@
+
+{{> ../../components/header-wrap.hbs}}
+
+{{> ../../components/header.hbs}}
+
+<section>
+  <div class="container">
+    <div class="row">
+
+       {{#each cardss}}
+        {{> ../../components/catalog-cards.hbs}}
+        {{/each}}
+
+
+
+    </div>
+  </div>
+</section>
+
+{{> ../../components/footer.hbs}}
+
+{{> ../../components/footer-wrap.hbs}}
+

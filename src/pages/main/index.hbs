@@ -1,17 +1,250 @@
-
 {{> ../../components/header-wrap.hbs}}
 
 {{> ../../components/header.hbs}}
 
-{{> ../../components/section-baner.hbs}}
+<section class="baner">
+  <div class="container">
+    <div class="baner__main">
+      <div class="baner__offer">
+        <div class="baner__title">
+          Быстрая доставка вкусной японской еды
+        </div>
+        <button class="baner__btn">
+          Посмотреть меню
+        </button>
+      </div>
+      <div class="baner__slider-section">
+        <div class="swiper baner-slider">
+          <div class="swiper-wrapper">
 
-{{> ../../components/section-menu-mini.hbs}}
+            <div class="swiper-slide baner-slide">
+              <div class="baner__img-box">
+                <img src="@assets/img/maki.png" alt="">
+              </div>
+              <div class="baner__content">
+                <div class="baner__slider-title">
+                  Ролл
+                </div>
+                <div class="baner__slider-name">
+                  Maki
+                </div>
+                <div class="baner__slider-discription">
+                  Лосось, рис, салат, кунжут, нори
+                </div>
+                <div class="baner__info">
+                  <div class="baner__price">
+                    320 Р
+                  </div>
+                  <img src="@assets/icon/rectangle.svg" alt="">
+                  <div class="baner__weight">
+                    260 гр / 6 шт.
+                  </div>
+                </div>
+                <div class="baner__btn-add">
+                  <div class="baner__btn-bg"></div>
+                  <div class="baner__btn-setting">
+                    <div class="baner__btn-plus">
+                      <img src="@assets/icon/plus.svg" alt="">
+                    </div>
+                    <div class="baner__counter">1</div>
+                    <div class="baner__btn-minus">
+                      <img src="@assets/icon/minus.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="baner__btn-white">
+                    Добавить к заказу
+                    <img src="@assets/icon/basket.svg" alt="" class="baner__basket">
+                  </div>
+                </div>
+              </div>
+            </div>
 
-{{> ../../components/section-popular.hbs}}
+            <div class="swiper-slide baner-slide">
+              <div class="baner__img-box">
+                <img src="@assets/img/maki.png" alt="">
+              </div>
+              <div class="baner__content">
+                <div class="baner__slider-title">
+                  Суп
+                </div>
+                <div class="baner__slider-name">
+                  Мисо
+                </div>
+                <div class="baner__slider-discription">
+                  Сыр тофу, вакаме, паста мисо
+                </div>
+                <div class="baner__info">
+                  <div class="baner__price">
+                    400 Р
+                  </div>
+                  <img src="@assets/icon/rectangle.svg" alt="">
+                  <div class="baner__weight">
+                    350 гр
+                  </div>
+                </div>
+                <div class="baner__btn-add">
+                  <div class="baner__btn-bg"></div>
+                  <div class="baner__btn-setting">
+                    <div class="baner__btn-plus">
+                      <img src="@assets/icon/plus.svg" alt="">
+                    </div>
+                    <div class="baner__counter">1</div>
+                    <div class="baner__btn-minus">
+                      <img src="@assets/icon/minus.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="baner__btn-white">
+                    Добавить к заказу
+                    <img src="@assets/icon/basket.svg" alt="" class="baner__basket">
+                  </div>
+                </div>
+              </div>
+            </div>
 
-{{> ../../components/section-full-menu.hbs}}
+            <div class="swiper-slide baner-slide">
+              <div class="baner__img-box">
+                <img src="@assets/img/maki.png" alt="">
+              </div>
+              <div class="baner__content">
+                <div class="baner__slider-title">
+                  Ролл
+                </div>
+                <div class="baner__slider-name">
+                  Филадельфия
+                </div>
+                <div class="baner__slider-discription">
+                  Рис, лосось, сыр филадельфия, нори
+                </div>
+                <div class="baner__info">
+                  <div class="baner__price">
+                    320 Р
+                  </div>
+                  <img src="@assets/icon/rectangle.svg" alt="">
+                  <div class="baner__weight">
+                    260 гр / 6 шт.
+                  </div>
+                </div>
+                <div class="baner__btn-add">
+                  <div class="baner__btn-bg"></div>
+                  <div class="baner__btn-setting">
+                    <div class="baner__btn-plus">
+                      <img src="@assets/icon/plus.svg" alt="">
+                    </div>
+                    <div class="baner__counter">1</div>
+                    <div class="baner__btn-minus">
+                      <img src="@assets/icon/minus.svg" alt="">
+                    </div>
+                  </div>
+                  <div class="baner__btn-white">
+                    Добавить к заказу
+                    <img src="@assets/icon/basket.svg" alt="" class="baner__basket">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination pagination-baner"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="menu">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12
+                col-sm-12
+                col-md-6
+                col-lg-4">
+        <div class="box">
+          <div class="box__title">Роллы</div>
+          <div class="box__img-box">
+            <img src="@assets/img/rolls.png" alt="" class="box__img">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12
+    col-sm-12
+    col-md-6
+    col-lg-4">
+        <div class="box">
+          <div class="box__title">Сеты</div>
+          <div class="box__img-box">
+            <img src="@assets/img/sets.png" alt="" class="box__img">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12
+col-sm-12
+col-md-6
+col-lg-4">
+        <div class="box">
+          <div class="box__title">Запеченные роллы</div>
+          <div class="box__img-box">
+            <img src="@assets/img/hotRolls.png" alt="" class="box__img">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12
+col-sm-12
+col-md-6
+col-lg-4">
+        <div class="box">
+          <div class="box__title">Воки</div>
+          <div class="box__img-box">
+            <img src="@assets/img/voks.png" alt="" class="box__img">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12
+col-sm-12
+col-md-6
+col-lg-4">
+        <div class="box">
+          <div class="box__title">Супы</div>
+          <div class="box__img-box">
+            <img src="@assets/img/sup.png" alt="" class="box__img">
+          </div>
+        </div>
+      </div>
+
+      <div class="col-xs-12
+col-sm-12
+col-md-6
+col-lg-4">
+        <div class="box">
+          <div class="box__title">Напитки</div>
+          <div class="box__img-box">
+            <img src="@assets/img/drinks.png" alt="" class="box__img">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section class="popular">
+  <div class="container">
+    <div class="popular__title">
+      Популярное
+    </div>
+    <div class="swiper popular">
+      <div class="swiper-wrapper popular__slider-wrapper">
+        {{#each cards}}
+        {{> ../../components/card-slider-main.hbs}}
+        {{/each}}
+       </div>
+      <div class="scrollbar-popular"></div>
+    </div>
+  </div>
+</section>
 
 {{> ../../components/footer.hbs}}
 
 {{> ../../components/footer-wrap.hbs}}
-
