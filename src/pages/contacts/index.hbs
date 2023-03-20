@@ -4,57 +4,52 @@
 
 <section class="contacts">
   <div class="container">
-    <div class="contacts__title">
+    <div class="sectionTitle">
       Контакты
     </div>
     <div class="contacts__baner">
       <div class="contacts__content">
         <div class="contacts__info">
-          <div class="contacts__adres">
-            <div class="contacts__adres-icon">
+          <div class="contBlock">
+            <div class="contBlock__icon">
               <img src="@assets/icon/location.svg" alt="">
             </div>
-            <div class="contacts__adres-info">
-              <div class="contacts__adres-title">АДРЕС</div>
-              <div class="contacts__adres-sub-title">г. Москва, ул. Московская, 56</div>
+            <div class="contBlock__info">
+              <div class="contBlock__title">АДРЕС</div>
+              <div class="contBlock__title-sub">г. Москва, ул. Московская, 56</div>
             </div>
           </div>
-          <div class="contacts__phone">
-            <div class="contacts__phone-icon">
+          <div class="contBlock">
+            <div class="contBlock__icon">
               <img src="@assets/icon/phoneCont.svg" alt="">
             </div>
-            <div class="contacts__phone-info">
-              <div class="contacts__phone-title">ТЕЛЕФОН</div>
-              <div class="contacts__phone-sub-title">7 (495) 450-600</div>
-              <div class="contacts__phone-sub-title-two">7 (901) 341- 54-30</div>
+            <div class="contBlock__info">
+              <div class="contBlock__title">ТЕЛЕФОН</div>
+              <div class="contBlock__title-sub">7 (495) 450-600</div>
+              <div class="contBlock__dsc">7 (901) 341- 54-30</div>
             </div>
           </div>
-          <div class="contacts__mail">
-            <div class="contacts__mail-icon">
+          <div class="contBlock">
+            <div class="contBlock__icon">
               <img src="@assets/icon/email.svg" alt="">
             </div>
-            <div class="contacts__mail-info">
-              <div class="contacts__mail-title">E-MAIL</div>
-              <div class="contacts__mail-sub-title">info@oishi-sushi.ru</div>
+            <div class="contBlock__info">
+              <div class="contBlock__title">E-MAIL</div>
+              <div class="contBlock__title-sub">info@oishi-sushi.ru</div>
             </div>
           </div>
-          <div class="contacts__time">
-            <div class="contacts__time-icon">
+          <div class="contBlock">
+            <div class="contBlock__icon">
               <img src="@assets/icon/time.svg" alt="">
             </div>
-            <div class="contacts__time-info">
-              <div class="contacts__time-title">РЕЖИМ РАБОТЫ</div>
-              <div class="contacts__time-sub-title">Ежедневно с 9:00 до 00:00</div>
+            <div class="contBlock__info">
+              <div class="contBlock__title">РЕЖИМ РАБОТЫ</div>
+              <div class="contBlock__title-sub">Ежедневно с 9:00 до 00:00</div>
             </div>
           </div>
         </div>
         <div class="contacts__map">
-          <div style="position:relative;overflow:hidden;"><a
-              href="https://yandex.ru/maps/44/izhevsk/?utm_medium=mapframe&utm_source=maps"
-              style="color:#eee;font-size:12px;position:absolute;top:0px;">Ижевск</a><a
-              href="https://yandex.ru/maps/44/izhevsk/house/ulitsa_voroshilova_14/YUoYdAJpSkEDQFtsfXR2dH9gZA==/?ll=53.261394%2C56.875143&utm_medium=mapframe&utm_source=maps&z=17.25"
-              style="color:#eee;font-size:12px;position:absolute;top:14px;">Улица Ворошилова, 14 —
-              Яндекс Карты</a><iframe
+          <div style="position:relative;overflow:hidden;"><iframe
               src="https://yandex.ru/map-widget/v1/?ll=53.261394%2C56.875143&mode=whatshere&whatshere%5Bpoint%5D=53.259221%2C56.875312&whatshere%5Bzoom%5D=17&z=17.25"
               width="1165" height="463" border-radius="6px" frameborder="1" allowfullscreen="true"
               style="position:relative;"></iframe></div>
@@ -66,123 +61,93 @@
 
 <section class="order">
   <div class="container">
-    <div class="order__title">
+    <div class="sectionTitle">
       Оформление заказа
     </div>
     <div class="order__content">
       <div class="order__chosen">
-        <div class="order__card">
-          <div class="order__icons">
-            <img src="@assets/icon/star.svg" alt="">
-          </div>
-          <div class="order__img">
-            <img src="@assets/img/rollCalifornia" alt="">
-          </div>
-          <div class="order__name-title">
-            <div class="order__pos-title">
-              Ролл
-            </div>
-            <div class="order__pos-subTitle">
-              Калифорния
-            </div>
-          </div>
-          <div class="order__counter">
 
-            <div class="order__btn-plus">
-              <img src="@assets/icon/plus.svg" alt="">
-            </div>
-            <div class="order__counter-num">1</div>
-            <div class="order__btn-minus">
-              <img src="@assets/icon/minus.svg" alt="">
-            </div>
+        {{> ../../components/card-order.hbs}}
 
+        {{> ../../components/card-order.hbs}}
 
-          </div>
-          <div class="order__price">
-            320 р
-          </div>
-          <div class="order__cross">
-            <img src="@assets/icon/delete" alt="">
-
-          </div>
-
-        </div>
-
-        <div class="order__card">
-          <div class="order__icons">
-            <img src="@assets/icon/star.svg" alt="">
-          </div>
-          <div class="order__img">
-            <img src="@assets/img/rollCalifornia" alt="">
-          </div>
-          <div class="order__name-title">
-            <div class="order__pos-title">
-              Ролл
-            </div>
-            <div class="order__pos-subTitle">
-              Калифорния
-            </div>
-          </div>
-          <div class="order__counter">
-
-            <div class="order__btn-plus">
-              <img src="@assets/icon/plus.svg" alt="">
-            </div>
-            <div class="order__counter-num">1</div>
-            <div class="order__btn-minus">
-              <img src="@assets/icon/minus.svg" alt="">
-            </div>
-
-
-          </div>
-          <div class="order__price">
-            320 р
-          </div>
-          <div class="order__cross">
-            <img src="@assets/icon/delete" alt="">
-
-          </div>
-
-        </div>
+        {{> ../../components/card-order.hbs}}
 
         <div class="order__total">Итого: 1440 р</div>
       </div>
 
+
       <div class="order__data">
+        <div class="order__form">
+          <div class="order__data-personal">
+            <div class="order__personal-title">Личные данные</div>
+            <div class="input">
+              <div class="input__title">Ваше имя</div>
+              <input class="input__line" type="text" placeholder="Олег">
+            </div>
+            <div class="input">
+              <div class="input__title">Номер телефона</div>
+              <input class="input__line" type="text" placeholder="Номер">
+            </div>
+            <div class="input">
+              <div class="input__title">Комментарий к заказу</div>
+              <textarea class="input__comments" name="comment" cols="25" rows="3"
+                placeholder="Например: Нет домофона"></textarea>
+            </div>
+          </div>
+          <div class="order__data-deliviry">
+            <div class="order__deliviry-title">Доставка</div>
+            <div class="input">
+              <select id="mySelect">
+                <option>Select</option>
+                <option value="foo">Foo</option>
+                <option value="buz">Buz</option>
+              </select>
 
-        <div class="order__data-personal">
-          <div class="order__personal-title">Личные данные</div>
-          <div class="order__personal-name">Ваше имя</div>
-          <input type="text" placeholder="Олег" class="order__line-name">
-          <div class="order__personal-phone">
-            Номер телефона
+              </select>
+              <div class="input__title">Выберите адрес</div>
+              <input class="input__line" type="text" placeholder="Сохраненные адреса">
+            </div>
+            <div class="input">
+              <div class="input__title">Улица</div>
+              <input class="input__line" type="text" placeholder="Укажите улицу доставки">
+            </div>
+            <div class="input">
+              <div class="input__title">Номер дома</div>
+              <input class="input__line" type="text" placeholder="Номер дома">
+            </div>
+            <div class="input">
+              <div class="input__title">Номер квартиры</div>
+              <input class="input__line" type="text" placeholder="Номер квартиры">
+            </div>
+
           </div>
-          <input type="text" placeholder="Номер" class="order__line-phone">
-          <div class="order__personal-comments">
-            Комментарий к заказу
-          </div>
-          <textarea name="comment" cols="25" rows="3" class="order__comments"></textarea>
         </div>
-
-
-        <div class="order__data-deliviry">
-          <div class="order__deliviry-title">Доставка</div>
-          <div class="order__adres">
-            Выберите адрес
+        <div class="agreement">
+          <div class="checkbox">
+          <input class="agreement__check" type="checkbox">
+          <div class="checkbox__vis"><img src="@assets/icon/tick.svg" alt=""></div>
           </div>
-          <input type="text" placeholder="Сохраненные адреса" class="order__line-adres">
-          <div class="order__deliviry-st">Улица</div>
-          <input type="text" placeholder="Укажите улицу доставки" class="order__line-st">
-          <div class="order__house-num">Номер дома</div>
-          <input type="text" placeholder="Номер дома" class="order__line-house">
-          <div class="order__apartment">Номер квартиры</div>
-          <input type="text" placeholder="Номер квартиры" class="order__apart-num">
+          <div class="agreement__title">
+            Я согласен с
+            <a class="agreement__link" href="#">
+              политикой обраотки персональных
+              данных
+            </a>
+          </div>
         </div>
+        <button class="baner__btn">
+          Оформить заказ
+        </button>
       </div>
+
     </div>
 
-  </div>
+    {{> ../../components/popup.hbs}}
+
+   
 </section>
+
 
 {{> ../../components/footer.hbs}}
 

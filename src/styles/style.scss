@@ -13,7 +13,7 @@
 
 .body {
   font-family: "Igra Sans";
-  background-color: #e5e5e5;
+  background: #f7f7f7;
   color: #404040;
   padding: 40px 20px;
   overflow-x: hidden;
@@ -163,6 +163,7 @@
 
   &__basket-wrapper {
     display: flex;
+    align-items: center;
   }
 
   &__basket-sum {
@@ -609,13 +610,13 @@
 
 //--contacts
 
+.sectionTitle {
+  font-size: 26px;
+  margin-bottom: 30px;
+}
+
 .contacts {
   margin-bottom: 60px;
-
-  &__title {
-    font-size: 26px;
-    margin-bottom: 30px;
-  }
 
   &__baner {
     background: #ffffff;
@@ -631,22 +632,6 @@
 
   &__info {
     padding: 20px;
-  }
-
-  &__adres {
-    display: flex;
-    align-items: center;
-    margin-bottom: 50px;
-  }
-
-  &__adres-icon {
-    margin-right: 30px;
-  }
-
-  &__adres-title {
-    font-size: 12px;
-    color: #999999;
-    margin-bottom: 10px;
   }
 
   &__adres-sub-title {
@@ -731,8 +716,35 @@
   &__map {
     width: 1165px;
     height: 463px;
-    background: #000;
     border-radius: 6px;
+  }
+}
+
+.contBlock {
+  display: flex;
+  align-items: center;
+  margin-bottom: 50px;
+  &__icon {
+    margin-right: 30px;
+  }
+
+  &__title {
+    font-size: 12px;
+    color: #999999;
+    margin-bottom: 10px;
+  }
+
+  &__title-sub {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+  }
+
+  &__dsc {
+    font-family: "Roboto";
+    font-weight: 400;
+    font-size: 16px;
+    margin-top: 4px;
   }
 }
 
@@ -742,15 +754,6 @@
   &__title {
     font-size: 26px;
     margin-bottom: 30px;
-  }
-
-  &__card {
-    display: flex;
-    justify-content: space-around;
-    width: 801px;
-    align-items: center;
-    padding: 26px 0;
-    border-bottom: #F7F7F7 solid 2px;
   }
 
   &__content {
@@ -764,74 +767,25 @@
     padding: 40px;
   }
 
-  &__icons {
-    margin-right: 30px;
-  }
-
-  &__img {
-    margin-right: 40px;
-  }
-
-
-  &__counter {
-    display: flex;
-    margin-right: 50px;
-  }
-
-  &__btn-plus{
-    margin-right: 9px;
-  }
-
-  &__counter-num{
-    margin-right: 12px;
-  }
-
-
-
-  &__price {
-    margin-right: 50px;
-  }
-
   &__data {
     background: #ffffff;
     box-shadow: 0px 3px 1px rgb(0 0 0 / 5%);
     border-radius: 6px;
     padding: 40px;
     margin-left: 18px;
+  }
+
+  &__form {
     display: flex;
   }
 
-  &__data-personal{
+  &__data-personal {
     margin-right: 40px;
   }
 
   &__personal-title {
+    font-size: 14px;
     margin-bottom: 26px;
-  }
-
-  &__personal-name {
-    margin-bottom: 4px;
-  }
-
-  &__line-name {
-    background-color: #f5f7fa;
-    border-radius: 6px;
-    padding: 10px 20px;
-    margin-bottom: 30px;
-  }
-
-  &__personal-phone {
-    margin-bottom: 4px;
-  }
-
-  &__line-phone {
-    margin-bottom: 30px;
-  }
-
-  &__line-phone {
-    background-color: #f5f7fa;
-    border-radius: 6px;
-    padding: 10px 20px;
   }
 
   &__deliviry-title {
@@ -882,19 +836,230 @@
     margin-bottom: 30px;
   }
 
-
-
-
-
-
-
-
-
-
-
   &__total {
     display: flex;
     flex-direction: row-reverse;
     margin-top: 40px;
   }
+}
+
+.cardOrder {
+  display: flex;
+  justify-content: space-around;
+  width: 801px;
+  align-items: center;
+  padding: 26px 0;
+  border-bottom: #f7f7f7 solid 2px;
+
+  &__icons {
+    margin-right: 30px;
+  }
+
+  &__img {
+    width: 102px;
+    margin-right: 40px;
+  }
+
+  &__img-assets {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__counter {
+    display: flex;
+    margin-right: 50px;
+  }
+
+  &__btn-plus {
+    margin-right: 9px;
+  }
+
+  &__counter-num {
+    margin-right: 12px;
+  }
+
+  &__price {
+    margin-right: 50px;
+  }
+}
+
+.input {
+  &__title {
+    margin-bottom: 4px;
+    font-size: 12px;
+  }
+
+  &__line {
+    border: solid 2px #f5f5f5;
+    border-radius: 6px;
+    padding: 15px 20px;
+    width: 332px;
+    font-family: "Roboto", sans-serif;
+    color: #404040;
+    font-size: 14px;
+    margin-bottom: 30px;
+  }
+
+  &__comments {
+    border: solid 2px #f5f5f5;
+    border-radius: 6px;
+    padding: 14px 20px;
+    width: 332px;
+    height: 153px;
+    font-family: "Roboto", sans-serif;
+    color: #404040;
+    font-size: 14px;
+  }
+}
+
+.agreement {
+  display: flex;
+  margin-bottom: 16px;
+
+  &__check {
+    display: none;
+    margin-right: 10px;
+  }
+
+  &__title {
+    font-family: "Roboto";
+    color: #404040;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &__link {
+    color: #f0af3b;
+  }
+
+}
+
+.checkbox {
+  &__vis {
+    background-color: #E6E6E6;
+    width: 14px;
+    height: 14px;
+    border-radius: 4px;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.select {
+  display: flex;
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.05);
+  border-radius: 6px;
+  padding: 40px;
+  margin: 40px 0;
+
+  &__right {
+    display: flex;
+    margin-left: 80px;
+  }
+}
+
+.button {
+  &__invisible {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #f7f7f7;
+    border-radius: 6px;
+    margin-right: 15px;
+    font-family: "Roboto";
+  }
+
+  &__section {
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0);
+    border: 2px solid #f7f7f7;
+    border-radius: 6px;
+    margin-right: 15px;
+    font-family: "Roboto";
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__icon {
+    margin-right: 10px;
+  }
+}
+
+.popup {
+  background: #ffffff;
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 5%);
+  border-radius: 6px;
+  width: 447px;
+  padding: 60px 50px;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 35px;
+  }
+
+  &__enter {
+    font-size: 26px;
+  }
+
+  &__reg {
+    font-size: 16px;
+    color: #f0af3b;
+  }
+}
+
+.counter {
+  display: flex;
+  &__button {
+    object-fit: none;
+  }
+ .input {
+    background-color: #fff;
+    width: 22px;
+    margin: 0 10px;
+  }
+}
+
+
+.password {
+  border: solid 2px #f5f5f5;
+  border-radius: 6px;
+  padding: 15px 20px;
+  width: 332px;
+  font-family: "Roboto", sans-serif;
+  color: #404040;
+  font-size: 14px;
+    &--error {
+    border: 2px solid #F0AF3B;
+  }
+
+  &--success {
+    border: 2px solid #4CBE66;
+  }
+}
+
+
+.btn__pass {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  color: orange;
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  cursor:pointer;
+}
+
+.bd {
+  position: relative;
+}
+
+.btn__pass.act {
+  color: silver;
 }

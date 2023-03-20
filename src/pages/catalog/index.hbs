@@ -1,17 +1,35 @@
-
 {{> ../../components/header-wrap.hbs}}
 
 {{> ../../components/header.hbs}}
 
 <section>
   <div class="container">
+  <div class="select">
+    <div class="select__left">
+      <button class="button__invisible"> Роллы <div class="button-select-on"></div></button>
+      <button class="button__invisible">Сеты <div class="button-select-on"></div></button>
+      <button class="button__invisible">Запеченные роллы <div class="button-select-on"></div></button>
+      <button class="button__invisible">Воки <div class="button-select-on"></div></button>
+      <button class="button__invisible">Супы <div class="button-select-on"></div></button>
+      <button class="button__invisible">Напитки <div class="button-select-on"></div></button>
+    </div>
+    <div class="select__half"></div>
+    <div class="select__right">
+      <button class="button__section"><img class="button__icon" src="@assets/icon/star" alt=" "> Популярное</button>
+      <button class="button__section"> <img class="button__icon" src="@assets/icon/veg" alt=" "> Вегетарианское</button>
+      <button class="button__section"> <img class="button__icon" src="@assets/icon/hot" alt=" "> Острое</button>
+    </div>
+  </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
     <div class="row">
 
-       {{#each cardss}}
-        {{> ../../components/catalog-cards.hbs}}
-        {{/each}}
-
-
+      {{#each cardss}}
+      {{> ../../components/catalog-cards.hbs}}
+      {{/each}}
 
     </div>
   </div>
@@ -20,4 +38,3 @@
 {{> ../../components/footer.hbs}}
 
 {{> ../../components/footer-wrap.hbs}}
-

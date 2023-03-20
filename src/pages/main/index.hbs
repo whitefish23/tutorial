@@ -16,7 +16,6 @@
       <div class="baner__slider-section">
         <div class="swiper baner-slider">
           <div class="swiper-wrapper">
-
             <div class="swiper-slide baner-slide">
               <div class="baner__img-box">
                 <img src="@assets/img/maki.png" alt="">
@@ -41,15 +40,11 @@
                   </div>
                 </div>
                 <div class="baner__btn-add">
-                  <div class="baner__btn-bg"></div>
-                  <div class="baner__btn-setting">
-                    <div class="baner__btn-plus">
-                      <img src="@assets/icon/plus.svg" alt="">
-                    </div>
-                    <div class="baner__counter">1</div>
-                    <div class="baner__btn-minus">
-                      <img src="@assets/icon/minus.svg" alt="">
-                    </div>
+                  
+                  <div class="counter" data-coun>
+                    <img src="@assets/icon/plus.svg" alt="" class="counter__button counter__butPlus">
+                    <input type="text" disabled value="1" class="input">
+                    <img src="@assets/icon/minus.svg" alt="" class="counter__button counter__butMinus">
                   </div>
                   <div class="baner__btn-white">
                     Добавить к заказу
@@ -58,7 +53,6 @@
                 </div>
               </div>
             </div>
-
             <div class="swiper-slide baner-slide">
               <div class="baner__img-box">
                 <img src="@assets/img/maki.png" alt="">
@@ -239,7 +233,7 @@ col-lg-4">
         {{#each cards}}
         {{> ../../components/card-slider-main.hbs}}
         {{/each}}
-       </div>
+      </div>
       <div class="scrollbar-popular"></div>
     </div>
   </div>
