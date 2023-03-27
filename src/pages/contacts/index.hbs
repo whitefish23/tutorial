@@ -59,95 +59,9 @@
   </div>
 </section>
 
-<section class="order">
-  <div class="container">
-    <div class="sectionTitle">
-      Оформление заказа
-    </div>
-    <div class="order__content">
-      <div class="order__chosen">
-
-        {{> ../../components/card-order.hbs}}
-
-        {{> ../../components/card-order.hbs}}
-
-        {{> ../../components/card-order.hbs}}
-
-        <div class="order__total">Итого: 1440 р</div>
-      </div>
 
 
-      <div class="order__data">
-        <div class="order__form">
-          <div class="order__data-personal">
-            <div class="order__personal-title">Личные данные</div>
-            <div class="input">
-              <div class="input__title">Ваше имя</div>
-              <input class="input__line" type="text" placeholder="Олег">
-            </div>
-            <div class="input">
-              <div class="input__title">Номер телефона</div>
-              <input class="input__line" type="text" placeholder="Номер">
-            </div>
-            <div class="input">
-              <div class="input__title">Комментарий к заказу</div>
-              <textarea class="input__comments" name="comment" cols="25" rows="3"
-                placeholder="Например: Нет домофона"></textarea>
-            </div>
-          </div>
-          <div class="order__data-deliviry">
-            <div class="order__deliviry-title">Доставка</div>
-            <div class="input">
-              <select id="mySelect">
-                <option>Select</option>
-                <option value="foo">Foo</option>
-                <option value="buz">Buz</option>
-              </select>
-
-              </select>
-              <div class="input__title">Выберите адрес</div>
-              <input class="input__line" type="text" placeholder="Сохраненные адреса">
-            </div>
-            <div class="input">
-              <div class="input__title">Улица</div>
-              <input class="input__line" type="text" placeholder="Укажите улицу доставки">
-            </div>
-            <div class="input">
-              <div class="input__title">Номер дома</div>
-              <input class="input__line" type="text" placeholder="Номер дома">
-            </div>
-            <div class="input">
-              <div class="input__title">Номер квартиры</div>
-              <input class="input__line" type="text" placeholder="Номер квартиры">
-            </div>
-
-          </div>
-        </div>
-        <div class="agreement">
-          <div class="checkbox">
-          <input class="agreement__check" type="checkbox">
-          <div class="checkbox__vis"><img src="@assets/icon/tick.svg" alt=""></div>
-          </div>
-          <div class="agreement__title">
-            Я согласен с
-            <a class="agreement__link" href="#">
-              политикой обраотки персональных
-              данных
-            </a>
-          </div>
-        </div>
-        <button class="baner__btn">
-          Оформить заказ
-        </button>
-      </div>
-
-    </div>
-
-    {{> ../../components/popup.hbs}}
-
-   
-</section>
-
+{{> ../../components/popup.hbs}}
 
 {{> ../../components/footer.hbs}}
 
