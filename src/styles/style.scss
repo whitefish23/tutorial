@@ -1170,18 +1170,26 @@
     margin-bottom: 60px;
   }
 
-  .ac {
-    margin-top: 0px;
+  .ac .ac-trigger::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 0;
+    height: 0;
+    width: 10px;
+    height: 10px;
+    background: url('~@assets/icon/eye.svg') no-repeat center center;
+    background-size: 100%;
+    transform: translateY(-50%);
   }
 
-  .ac .ac-trigger {
-    font: 16px "Igra Sans", sans-serif;
-    color: #404040;
-  }
-
-  .ac .ac-panel .ac-text {
-    font-size: 16px;
-    font-family: "Roboto";
+  .ac.is-active > .ac-header .ac-trigger::after {
+    content: "";
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #404040;
+    transform: translateY(-50%) rotate(180deg);
   }
 }
 
