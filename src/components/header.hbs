@@ -1,60 +1,88 @@
-
 <header class="header">
-    <div class="container">
-      <div class="header__wrapper">
-        <div class="header__menu">
-          <div class="header__btn-logo">
-            <div class="header__btn">
-              <div class="header__lines">
-                <div class="header__line"></div>
-                <div class="header__line"></div>
-                <div class="header__line"></div>
-              </div>
-              <div class="header__btn-name">
-                МЕНЮ
-              </div>
+  <div class="container">
+    <div class="header__wrapper">
+      <div class="header__menu">
+        <div class="header__btn-logo">
+          <div class="header__btn">
+            <div class="header__lines">
+              <div class="header__line"></div>
+              <div class="header__line"></div>
+              <div class="header__line"></div>
             </div>
-            <div class="header__logo">
-              <img src="@assets/icon/logo.svg" alt="">
-            </div>
+            <div class="header__btn-name">МЕНЮ</div>
           </div>
-          <div class="header__info">
-            <a href="http://localhost:8080/account#"><div class="header__item">Условия доставки</div></a>
-            <div class="header__item">Акции</div>
-            <a href="http://localhost:8080/vacancies#"><div class="header__item">Вакансии</div></a>
-            <a href="http://localhost:8080/contacts#"><div class="header__item">Контакты</div></a>
+          <a href="/main">
+          <div class="header__logo"><img src="@assets/icon/logo.svg" alt=""></div>
+          </a>
+        </div>
+        <div class="header__info">
+          <a href="/account">
+            <div class="header__item">Условия доставки</div>
+          </a>
+          <a href="/catalog">
+          <div class="header__item">Акции</div>
+          </a>
+          <a href="/vacancies">
+            <div class="header__item">Вакансии</div>
+          </a>
+          <a href="/contacts">
+            <div class="header__item">Контакты</div>
+          </a>
+        </div>
+      </div>
+      <div class="header__orders">
+        <div class="header__orders-times">
+          <div class="header__orders-text">Прием заказов</div>
+          <div class="header__orders-time">9:00 — 00:00</div>
+        </div>
+        <div class="header__phone">
+          <a href="tel: 8495450600" class="header__phone__wrapper">
+            <img src="@assets/icon/phone.svg" alt="" class="header__phone-icon">7 (495) 450 - 600
+        </div>
+        </a>
+        <div class="header__btn-icon">
+          <a href="/order">
+          <div class="header__icon-wrapper">
+            <img src="@assets/icon/account.svg" alt="" class="header__icon">
+          </div>
+          </a>
+        </div>
+        <div class="header__btn-icon">
+          <div class="header__icon-wrapper">
+            <img src="@assets/icon/like.svg" alt="" class="header-icon">
           </div>
         </div>
-        <div class="header__orders">
-          <div class="header__orders-times">
-            <div class="header__orders-text">Прием заказов</div>
-            <div class="header__orders-time">9:00 — 00:00</div>
-          </div>
-          <div class="header__phone">
-            <div class="header__phone__wrapper">
-              <img src="@assets/icon/phone.svg" alt="" class="header__phone-icon">
-              7 (495) 450 - 600
-            </div>
-          </div>
-          <div class="header__btn-icon">
-            <div class="header__icon-wrapper">
-              <img src="@assets/icon/account.svg" alt="" class="header__icon open-popup">
-            </div>
-          </div>
-          <div class="header__btn-icon">
-            <div class="header__icon-wrapper">
-              <img src="@assets/icon/like.svg" alt="" class="header-icon">
-            </div>
-          </div>
-          <div class="header__btn-basket">
-            <div class="header__basket-wrapper">
-              <div class="header__basket-sum">770 ₽</div>
-              <img src="@assets/icon/basket.svg" alt="" class="header__basket-icon">
-            </div>
+        <div class="header__btn-basket open-popup">
+          <div class="header__basket-wrapper">
+            <div class="header__basket-sum">770 ₽</div>
+            <img src="@assets/icon/basket.svg" alt="" class="header__basket-icon">
           </div>
         </div>
       </div>
     </div>
-  </header>
-
-  
+  </div>
+  <div class="popup">
+    <div class="popup__block">
+      <img src="@assets/icon/cross-popup.svg" alt="" class="popup__cross popup__close">
+      <div class="popup__header">
+        <div class="popup__enter">Вход</div>
+        <div class="popup__reg">Регистрация</div>
+      </div>
+      <div class="input">
+        <div class="input__title">Номер телефона</div>
+        <input id="phone-mask" class="input__line" type="text" placeholder="Номер">
+      </div>
+      <div class="input">
+        <div class="input__title">Пароль</div>
+        <div class="input__wrapper">
+          <input class="input__line-password" type="password" placeholder="Пароль">
+          <div class="input__glass"><img src="@assets/icon/eye" alt="" class="input__glassIcon"></div>
+        </div>
+      </div>
+      <div class="popup__btn">
+        <button class="baner__btn">Войти</button>
+        <button class="input__losePass ">Забыли пароль?</button>
+      </div>
+    </div>
+  </div>
+</header>

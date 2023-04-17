@@ -4,6 +4,40 @@
       display: none;
     }
   }
+
+  .select {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__left {
+      display: flex;
+      margin-bottom: 20px;
+    }
+  }
+
+  .order {
+    width: 100%;
+
+    &__content {
+      display: block;
+    }
+
+    .cardOrder {
+      width: 100%;
+    }
+
+    &__chosen {
+      margin-bottom: 18px;
+    }
+
+    &__data {
+      margin-left: 0px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
 
 @media (max-width: 1190px) {
@@ -28,6 +62,11 @@
 
     &__btn-icon {
       margin-right: 10px;
+    }
+
+    &__btn-basket {
+      padding: 15px 18px 15px;
+      font-size: 14px;
     }
   }
 
@@ -72,7 +111,6 @@
   .menu {
     margin-bottom: 40px;
 
-
     .box {
       border-radius: 6px;
       background-color: #ffffff;
@@ -115,7 +153,6 @@
 
   .footer-mob {
     display: block;
-    margin-top: 60px;
     border-radius: 6px;
     background-color: #fff;
     padding: 50px 10px;
@@ -204,6 +241,53 @@
       align-items: center;
     }
   }
+
+  .contacts {
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__map {
+      display: none;
+    }
+  }
+
+  .contBlock {
+    &__info {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .order {
+    &__form {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    &__data-personal {
+      margin-right: 0px;
+      margin-bottom: 58px;
+    }
+  }
+
+  .input {
+    &__line {
+      width: 100%;
+    }
+    &__comments {
+      width: 100%;
+    }
+  }
 }
 
 @media (max-width: 700px) {
@@ -244,7 +328,7 @@
       font-size: 14px;
       color: #404040;
       opacity: 0.7;
-      margin-bottom: 34px
+      margin-bottom: 34px;
     }
 
     &__info {
@@ -256,5 +340,101 @@
     display: none;
   }
 
-  
+  .select {
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 0px;
+    }
+    .button__section {
+      margin: 5px;
+    }
+
+    .button__invisible {
+      margin: 5px;
+      margin-right: 0px;
+    }
+  }
+
+  .cardOrder {
+    &__name {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__wrapper-count {
+      display: flex;
+    }
+  }
+
+  .account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    &__bio {
+      margin-bottom: 20px;
+      align-items: flex-start;
+    }
+
+    &__wrapperAva {
+      width: 40px;
+      height: 40px;
+    }
+
+    &__ava {
+      width: 100%;
+      height: 100%;
+    }
+
+    &__name {
+      font-size:16px;
+    }
+
+    &__phone {
+      font-size:14px;
+    }
+
+    &__edit {
+      font-size:12px;
+    }
+
+    &__exit {
+      font-size:12px;
+    }
+
+    &__bonus {
+      padding: 20px 100px 20px 20px;
+    }
+  }
+
+  .block-address {
+
+    &__add {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__street {
+      font-size: 14px;
+    }
+
+    &__blockBio {
+      width: 100%;
+      padding: 12px;
+      margin: 0px 11px 10px 0px;
+    }
+
+    &__addAdres {
+      margin-bottom: 0px;
+    }
+  }
 }

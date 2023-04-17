@@ -47,6 +47,10 @@
     font-size: 21px;
   }
 
+  &__logo:hover {
+    opacity: 60%;
+  }
+
   &__btn {
     padding: 15px 20px;
     background: #f0af3b;
@@ -100,6 +104,10 @@
     margin-right: 50px;
   }
 
+  &__item:hover {
+    opacity: 60%;
+  }
+
   //--part two
 
   &__info {
@@ -136,8 +144,18 @@
     margin-right: 30px;
   }
 
+  &__phone:hover {
+    opacity: 60%;
+  }
+
   &__phone-icon {
     margin-right: 16px;
+  }
+
+  .header-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   &__btn-icon {
@@ -150,6 +168,11 @@
     justify-content: center;
     align-items: center;
     margin-right: 30px;
+    cursor: pointer;
+  }
+
+  &__btn-icon:hover {
+    opacity: 60%;
   }
 
   &__btn-basket {
@@ -168,6 +191,11 @@
 
   &__basket-sum {
     margin-right: 7px;
+    cursor: pointer;
+  }
+
+  &__basket-sum:hover {
+    opacity: 60%;
   }
 }
 
@@ -203,6 +231,10 @@
     padding: 20px 30px;
     font-size: 16px;
     color: #fff;
+  }
+
+  &__btn:hover {
+    background-color: #e8a93c;
   }
 
   &__slider-bg {
@@ -299,9 +331,14 @@
     color: #000000;
     border-radius: 6px;
     padding: 20px 30px;
-    display: inline-flex;
+    display: block;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.05);
     z-index: 2;
+    cursor: pointer;
+  }
+
+  &__btn-white:hover {
+    opacity: 80%;
   }
 
   &__counter {
@@ -407,6 +444,11 @@
   &__sub-title {
     font-size: 12px;
     color: #f0af3b;
+    cursor: pointer;
+  }
+
+  &__sub-title:hover {
+    opacity: 60%;
   }
 
   &__social {
@@ -422,6 +464,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+  }
+
+  &__social-item:hover {
+    background: #ececec;
   }
 }
 
@@ -507,6 +554,13 @@
     margin-bottom: 14px;
   }
 
+  &__wrapper-count {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: -5px;
+  }
+
   &__card-composition {
     font-family: "Roboto";
     font-weight: 400;
@@ -560,6 +614,10 @@
     z-index: 2;
     display: flex;
     align-items: center;
+  }
+
+  &__btn-orange:hover {
+    background-color: #e8a93c;
   }
 
   &__counter {
@@ -836,20 +894,46 @@
     margin-bottom: 30px;
   }
 
-  &__total {
-    display: flex;
-    flex-direction: row-reverse;
+  &__totalWrapper {
     margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  &__num {
+    color: #f0af3b;
+    font-size: 26px;
+    margin-left: 10px;
   }
 }
 
 .cardOrder {
   display: flex;
   justify-content: space-around;
-  width: 801px;
+  width: 740px;
   align-items: center;
   padding: 26px 0;
   border-bottom: #f7f7f7 solid 2px;
+
+  &__wrapper-count {
+    display: flex;
+  }
+
+  &__wrapper {
+    margin-right: 50px;
+  }
+
+  &__name {
+    display: flex;
+    align-items: center;
+  }
+
+  &__title {
+    font-size: 12px;
+    opacity: 50%;
+  }
 
   &__icons {
     margin-right: 30px;
@@ -879,7 +963,12 @@
   }
 
   &__price {
-    margin-right: 50px;
+    margin: 0px 50px;
+    text-transform: uppercase;
+  }
+
+  &__pos-subTitle {
+    font-size: 20px;
   }
 }
 
@@ -900,6 +989,10 @@
     margin-bottom: 30px;
   }
 
+  &__line:focus {
+    border: solid 2px #f0af3b;
+  }
+
   &__comments {
     border: solid 2px #f5f5f5;
     border-radius: 6px;
@@ -909,6 +1002,10 @@
     font-family: "Roboto", sans-serif;
     color: #404040;
     font-size: 14px;
+  }
+
+  &__comments:focus {
+    border: solid 2px #f0af3b;
   }
 
   &__wrapper {
@@ -944,6 +1041,10 @@
     margin-bottom: 30px;
   }
 
+  &__line-password:focus {
+    border: solid 2px #f0af3b;
+  }
+
   &__losePass {
     margin-top: 30px;
     color: #f0af3b;
@@ -970,6 +1071,10 @@
   &__link {
     color: #f0af3b;
   }
+
+  &__link:hover {
+    opacity: 60%;
+  }
 }
 
 .checkbox {
@@ -984,9 +1089,9 @@
     align-items: center;
     justify-content: center;
   }
-}
-.checkbox__vis:checked ~ .checkbox__vis {
-  background: blue;
+  .checkbox__vis:checked ~ .checkbox__vis {
+    background: #f0af3b;
+  }
 }
 
 .select {
@@ -1114,7 +1219,6 @@
     align-items: center;
     margin-right: -5px;
   }
-
 }
 
 .password {
@@ -1183,7 +1287,13 @@
     font-size: 16px;
     font-family: "Roboto";
   }
+
+  .accordion__text ac-text {
+    background-color: #F7F7F7;
+  }
 }
+
+
 
 .account {
   background-color: #ffffff;
@@ -1209,17 +1319,58 @@
     margin-bottom: 5px;
   }
 
+  &__bonusTitle {
+    margin-bottom: 12px;
+  }
+
   &__bonus {
     padding: 30px 100px 43px 30px;
     background-color: #f7f7f7;
     border-radius: 6px;
   }
 
+  &__bonusNum {
+    font-size: 26px;
+    margin-right: 5px;
+  }
+
+  &__bonusBlock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__bonusLogo {
+    margin-left: 5px;
+    margin-right: 10px;
+  }
+
+  &__howCheck {
+    color: #f0af3b;
+    font-size: 12px;
+    cursor: pointer;
+  }
+
+  &__info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  &__infoLogo {
+    margin-right: 10px;
+    cursor: pointer;
+  }
+
+  &__infoText {
+    color: #404040;
+  }
+
   &__phone {
     font-family: "Roboto";
     font-weight: 500;
     font-size: 16px;
-    color:#404040;
+    color: #404040;
     opacity: 50%;
     margin-bottom: 14px;
   }
@@ -1228,11 +1379,13 @@
     color: #3ac457;
     font-size: 12px;
     margin-bottom: 16px;
+    cursor: pointer;
   }
 
   &__exit {
     color: #fb5b1d;
     font-size: 12px;
+    cursor: pointer;
   }
 }
 
@@ -1241,9 +1394,50 @@
   border-radius: 6px;
   padding: 30px 40px;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 20px;
 
   &__title {
     color: #404040;
     font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  &__add {
+    display: flex;
+  }
+
+  &__blockBio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 6px;
+    background-color: #f7f7f7;
+    width: 350px;
+    margin: 0px 21px 20px 0px;
+    cursor: pointer;
+  }
+
+  &__cross {
+    background-color: #fff;
+    border-radius: 6px;
+    padding: 7px;
+    width: 22px;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+
+  &__addAdres {
+    color: #f0af3b;
+    font-size: 12px;
+    margin-bottom: 68px;
+  }
+
+  &__addAdres {
+    cursor: pointer;
   }
 }
+

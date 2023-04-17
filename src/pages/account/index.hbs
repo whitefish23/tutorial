@@ -8,7 +8,9 @@
     <div class="col-xs-12 col-lg-6">
       <div class="account">
         <div class="account__bio">
-          <img src="@assets/img/ava.png" alt="">
+          <div class="account__wrapperAva">
+            <img src="@assets/img/ava.png" alt="" class="account__ava">
+          </div>
           <div class="account__data">
             <div class="account__name">Олег Хамитов</div>
             <div class="account__phone">7 (901) 324 - 98 - 12</div>
@@ -17,17 +19,45 @@
           </div>
         </div>
         <div class="account__bonus">
-          <div class="account__bonusTitle">У вас 397 быллов</div>
+          <div class="account__bonusTitle">У вас</div>
+          <div class="account__bonusBlock">
+            <div class="account__bonusNum">397</div>
+            <img src="@assets/icon/bonus.svg" alt="" class="account__bonusLogo">
+            <div class="account__sub">бонусов</div>
+          </div>
+          <div class="account__info">
+            <img src="@assets/icon/infoBonus.svg" alt="" class="account__infoLogo">
+            <div class="account__infoText">1 <img src="@assets/icon/bonusMini.svg" alt=""> равен 1₽</div>
+          </div>
+          <div class="account__howCheck">Как копятся бонусы?</div>
         </div>
       </div>
     </div>
     <div class="col-xs-12 col-lg-6">
       <div class="block-address">
         <div class="block-address__title">Мои адреса</div>
+        <div class="block-address__add">
+          <div class="block-address__blockBio">
+            <div class="block-address__street">
+              ул. Московская, д. 54, кв. 91
+            </div>
+            <div class="block-address__cross">
+              <img src="@assets/icon/crossAdres.svg" alt="">
+            </div>
+          </div>
+          <div class="block-address__blockBio">
+            <div class="block-address__street">
+              Очаковское ш., 19к2, офис 621
+            </div>
+            <div class="block-address__cross">
+              <img src="@assets/icon/crossAdres.svg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="block-address__addAdres">Добавить адрес</div>
       </div>
     </div>
   </div>
-
 
   {{> ../../components/footer.hbs}}
 
