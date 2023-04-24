@@ -63,6 +63,10 @@
     cursor: pointer;
   }
 
+  &__btn:hover {
+    background-color: #e8a93c;
+  }
+
   .header {
     &__line {
       &:first-child {
@@ -483,6 +487,7 @@
     font-size: 26px;
     margin-bottom: 30px;
   }
+
   &__card {
     width: 391px;
     height: 548px;
@@ -1229,6 +1234,7 @@
   font-family: "Roboto", sans-serif;
   color: #404040;
   font-size: 14px;
+
   &--error {
     border: 2px solid #f0af3b;
   }
@@ -1289,11 +1295,9 @@
   }
 
   .accordion__text ac-text {
-    background-color: #F7F7F7;
+    background-color: #f7f7f7;
   }
 }
-
-
 
 .account {
   background-color: #ffffff;
@@ -1441,3 +1445,46 @@
   }
 }
 
+.requirements {
+  font-family: "roboto";
+  margin-top: 20px;
+
+  &__title {
+    font-size: 12px;
+    opacity: 50%;
+    color: #404040;
+    margin-bottom: 10px;
+  }
+
+  &__points {
+    display: flex;
+    margin-bottom: 10px;
+  }
+
+  &__iconPoint {
+    display: flex;
+    align-items: center;
+  }
+
+  &__icon {
+    display: block;
+    margin-right: 10px;
+  }
+
+  &__btn {
+    display: inline-flex;
+    font-family: "Igra Sans";
+    background: #f0af3b;
+    box-shadow: 0px 20px 45px rgba(0, 0, 0, 0.07), 0px 15px 30px rgba(240, 175, 59, 0.2);
+    border-radius: 6px;
+    padding: 20px 30px;
+    font-size: 14px;
+    color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  &__btn:hover {
+    background-color: #e8a93c;
+  }
+}

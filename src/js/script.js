@@ -68,17 +68,19 @@ let btnPass = document.querySelector('.input__glassIcon');
 let inPass = document.querySelector('.input__line-password');
 const checkbox = document.querySelector('.ui-checkbox')
 
-btnPass.onclick = function() {
-  if (inPass.getAttribute('type') === 'password') {
-    inPass.setAttribute('type', 'text');
-    btnPass.classList.add('input__glassIcon--act');
-  } else {
-    inPass.setAttribute('type', 'password');
-    btnPass.classList.remove('input__glassIcon--act');
+if (btnPass) {
+  btnPass.onclick = function () {
+    if (inPass.getAttribute('type') === 'password') {
+      inPass.setAttribute('type', 'text');
+      btnPass.classList.add('input__glassIcon--act');
+    } else {
+      inPass.setAttribute('type', 'password');
+      btnPass.classList.remove('input__glassIcon--act');
+    }
   }
 };
 
-inPass.addEventListener('input', function() {
+inPass.addEventListener('input', function () {
   if (this.value.length > 0) {
     this.classList.remove('password--error')
     this.classList.add('password--success')
@@ -95,8 +97,8 @@ inPass.addEventListener('input', function() {
 
 let phoneMask = IMask(
   document.getElementById('phone-mask'), {
-    mask: '+{7}(000)000-00-00'
-  });
+  mask: '+{7}(000)000-00-00'
+});
 
 
 //-----
